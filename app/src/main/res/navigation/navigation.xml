@@ -2,11 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation">
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.aimardon.secretnotes.fragments.HomeFragment"
+        android:name="com.alimardon.homeork.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.aimardon.secretnotes.fragments.AddFragment"
+        android:name="com.alimardon.homeork.AddFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" >
         <action

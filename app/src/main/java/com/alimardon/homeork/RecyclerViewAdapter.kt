@@ -1,11 +1,8 @@
 package com.alimardon.homeork
 
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.View.OnLongClickListener
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
-import android.widget.Toast
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -47,6 +44,8 @@ class RecyclerViewAdapter :
         holder.binding.apply {
             title.text = item.title
             description.text = item.description
+            phone.text= item.phone.toString()
+            tanishtirish.text=item.tanishtirish
         }
         holder.itemView.setOnClickListener {
             Listener?.setOnClickListener(item)

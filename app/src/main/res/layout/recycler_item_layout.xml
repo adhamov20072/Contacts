@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="10dp"
@@ -14,17 +15,19 @@
         android:layout_width="match_parent"
         android:background="#E6E4E4"
         android:padding="10dp"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/LinearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/title"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:text="Title"
@@ -34,24 +37,25 @@
 
             <TextView
                 android:id="@+id/description"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxLines="2"
-                android:text=""
+                android:maxLines="1"
                 android:textSize="30sp" />
+
             <TextView
-                android:id="@+id/tanishtirish"
-                android:layout_width="match_parent"
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/phone"
-                android:layout_width="match_parent"
+                android:id="@+id/tanishtirish"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxLines="2"
+                android:inputType="number|phone"
+                android:maxLines="1"
                 android:text=""
                 android:textSize="30sp" />
         </LinearLayout>

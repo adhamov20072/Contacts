@@ -5,7 +5,7 @@
     android:id="@+id/nestedScroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.HomeFragment">
+    tools:context=".HomeFragment">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/edSearch"
@@ -15,14 +15,13 @@
         android:drawableEnd="@drawable/ic_baseline_search_24"
         android:drawableTint="@color/black"
         app:iconifiedByDefault="false"
-        android:hint="Search"
         android:maxLines="1"
         android:paddingStart="20dp"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:queryHint="Search" />
+        app:queryHint="Qidirish" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -42,7 +41,7 @@
         android:elevation="5dp"
         android:foregroundGravity="center"
         android:src="@drawable/ic_baseline_add_24"
-        app:backgroundTint="#FF9800"
+        app:backgroundTint="#1064F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:maxImageSize="50dp"
